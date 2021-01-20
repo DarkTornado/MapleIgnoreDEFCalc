@@ -3,10 +3,7 @@
 © 2021 Dark Tornado, All rights reserved.
 
 ## 정보
-* 스탯창에 표시된 방어율 무시와 스킬 등에 붙어있는 방어율 적용한 값을 계산해줘요.
-
-## 스크린샷
-<img src="https://raw.githubusercontent.com/DarkTornado/MapleIgnoreDEFCalc/main/Screenshot.png">
+* 스탯창에 표시된 방어율 무시에 스킬 등에 붙어있는 방어율을 적용한 값을 계산해줘요.
 
 ## 방어율 무시 적용 공식
 `현재_방무 + (100 - 현재_방무) × 추가되는_방무`
@@ -16,3 +13,6 @@
 
 ## 라이선스
 * [MIT License](https://github.com/DarkTornado/MapleIgnoreDEFCalc/blob/main/LICENSE)
+
+## 스크린샷
+<img src="https://raw.githubusercontent.com/DarkTornado/MapleIgnoreDEFCalc/main/Screenshot.png">
