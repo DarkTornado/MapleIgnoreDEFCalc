@@ -14,6 +14,7 @@
 
 ## 라이선스
 * [MIT License](https://github.com/DarkTornado/MapleIgnoreDEFCalc/blob/main/LICENSE)
+* 실방무 계산기 소스만 사용하는 경우는 메이플 도구에 적용되어 있는 GPL 3.0 대신 MIT 라이선스를 따라도 되는거에요.
 
 ## 스크린샷
 <img src="https://raw.githubusercontent.com/DarkTornado/MapleIgnoreDEFCalc/main/Screenshot.png">
