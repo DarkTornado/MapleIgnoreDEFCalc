@@ -18,3 +18,12 @@
 
 ## 스크린샷
 <img src="https://raw.githubusercontent.com/DarkTornado/MapleIgnoreDEFCalc/main/Screenshot.png">
+
+## 업데이트 내역
+
+### 버전 1.1
+* 소수점 이하 2번째 자리까지 계산 가능하도록 변경
+* 멀티 윈도우 지원
+
+### 버전 1.0
+* 최초 버전 출시
