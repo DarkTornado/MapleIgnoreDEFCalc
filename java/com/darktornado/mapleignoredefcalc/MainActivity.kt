@@ -66,7 +66,7 @@ class MainActivity : Activity() {
 
         val calc = Button(this)
         calc.text = "실방무 계산"
-        calc.setOnClickListener({
+        calc.setOnClickListener{
             val input1 = txt2.text.toString();
             val input2 = txt4.text.toString();
             if (input1.isBlank() || input2.isBlank()) {
@@ -76,7 +76,7 @@ class MainActivity : Activity() {
                 txt6.text = Editable.Factory.getInstance().newEditable(result)
                 toast("실방무 계산 결과 약 $result%인거에요.")
             }
-        })
+        }
         layout.addView(calc)
 
         txt5.text = "\n계산 결과 : "
@@ -89,7 +89,7 @@ class MainActivity : Activity() {
         val info = Button(this)
         info.text = "앱 정보 & 도움말"
         info.setOnClickListener({
-            showDialog("앱 정보 & 도움말", "앱 이름 : 실방무 계산기\n버전 : 1.1\n개발자 : Dark Tornado\n\n" +
+            showDialog("앱 정보 & 도움말", "앱 이름 : 실방무 계산기\n버전 : 1.2\n개발자 : Dark Tornado\n\n" +
                     " 메이플스토리라는 게임에 있는 '방어율 무시' 스탯을 계산해주는 앱이에요. 스탯창에 뜨는 방어율 무시 수치와, 스킬이나 코어 강화에 붙어있는 방어율 무시 수치(들)를 입력하면 실제로 적용되는 방어율 무시 수치를 계산해주는거에요.\n" +
                     " 스탯창에 뜨는 방어율 무시 수치는 올림된 값이고, 이 앱에서 계산한 결과가 100% 일치한다고 보장하지는 않는거에요\n\n" +
                     " 방무 적용 공식 : 현재방무 + (100 - 현재방무) × 추가되는 방무")
@@ -97,7 +97,7 @@ class MainActivity : Activity() {
         layout.addView(info)
 
         val maker = TextView(this)
-        maker.text = "\n© 2021 Dark Tornado, All rights reserved.\n"
+        maker.text = "\n© 2021-2023 Dark Tornado, All rights reserved.\n"
         maker.textSize = 13f
         maker.gravity = Gravity.CENTER
         layout.addView(maker)
