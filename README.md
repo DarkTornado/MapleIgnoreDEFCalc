@@ -1,6 +1,6 @@
 # 메이플스토리 실방무 계산기
 
-© 2021 Dark Tornado, All rights reserved.
+© 2021-2023 Dark Tornado, All rights reserved.
 
 ## 정보
 * 스탯창에 표시된 방어율 무시에 스킬 등에 붙어있는 방어율을 적용한 값을 계산해줘요.
