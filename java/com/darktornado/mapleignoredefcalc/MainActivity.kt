@@ -109,7 +109,7 @@ class MainActivity : Activity() {
         setContentView(scroll)
     }
 
-    fun calcIgnoreDEF(_current: Double, input: String): Double {
+    private fun calcIgnoreDEF(_current: Double, input: String): Double {
         var current: Double = _current
         val defs = input.split("\n")
         for (def in defs) {
@@ -120,7 +120,7 @@ class MainActivity : Activity() {
         return current.roundToInt().toDouble() / 100;
     }
 
-    fun showDialog(title: String, msg: String) {
+    private fun showDialog(title: String, msg: String) {
         val dialog = AlertDialog.Builder(this)
         dialog.setTitle(title)
         dialog.setMessage(msg)
