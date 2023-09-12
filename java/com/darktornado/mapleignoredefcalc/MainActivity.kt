@@ -61,7 +61,6 @@ class MainActivity : Activity() {
         txt3.textSize = 18f
         layout.addView(txt3)
         txt4.hint = "나머지 방어율 무시(들) 입력 (엔터로 구분)"
-//        txt4.inputType = InputType.TYPE_CLASS_NUMBER
         layout.addView(txt4)
 
         val calc = Button(this)
