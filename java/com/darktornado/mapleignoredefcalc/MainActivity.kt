@@ -65,7 +65,7 @@ class MainActivity : Activity() {
 
         val calc = Button(this)
         calc.text = "실방무 계산"
-        calc.setOnClickListener{
+        calc.setOnClickListener {
             val input1 = txt2.text.toString();
             val input2 = txt4.text.toString();
             if (input1.isBlank() || input2.isBlank()) {
@@ -96,7 +96,7 @@ class MainActivity : Activity() {
         layout.addView(info)
 
         val maker = TextView(this)
-        maker.text = "\n© 2021-2023 Dark Tornado, All rights reserved.\n"
+        maker.text = "\n© 2021-2025 Dark Tornado, All rights reserved.\n"
         maker.textSize = 13f
         maker.gravity = Gravity.CENTER
         layout.addView(maker)
@@ -111,10 +111,17 @@ class MainActivity : Activity() {
     private fun calcIgnoreDEF(_current: Double, input: String): Double {
         var current: Double = _current
         val defs = input.split("\n")
+        var error = false
         for (def in defs) {
-            val diff = (100.0 - current) * (def.toDouble() / 100)
-            current += diff
+            try{
+                val diff = (100.0 - current) * (def.toDouble() / 100)
+                current += diff
+            } catch (e: java.lang.Exception) {
+                error = true
+            }
         }
+
+        if (error) toast("숫자가 아닌 것이 입력되어, 해당 값은 제외하고 계산되었습니다.")
         current *= 100
         return current.roundToInt().toDouble() / 100;
     }
